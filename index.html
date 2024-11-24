@@ -8,15 +8,27 @@
 </head>
 <body>
     <a-scene>
-        <!-- Coffee Cup Body -->
-        <a-cylinder position="0 1.2 -3" radius="0.5" height="1.2" color="#8B4513" open-ended="true"></a-cylinder>
+        <!-- Coffee Cup Body (corrected orientation) -->
+        <a-cylinder 
+            position="0 0.6 -3" 
+            radius="0.5" 
+            height="1.2" 
+            color="#8B4513" 
+            open-ended="true" 
+            rotation="0 0 0">
+        </a-cylinder>
         
         <!-- Coffee Surface (inside the cup) -->
-        <a-cylinder position="0 1.8 -3" radius="0.48" height="0.05" color="#4B3621"></a-cylinder>
+        <a-cylinder 
+            position="0 1.15 -3" 
+            radius="0.48" 
+            height="0.05" 
+            color="#4B3621">
+        </a-cylinder>
         
-        <!-- Handle -->
+        <!-- Handle (aligned correctly) -->
         <a-torus 
-            position="0.6 1.2 -3" 
+            position="0.6 0.6 -3" 
             radius="0.2" 
             radius-tubular="0.04" 
             arc="180" 
@@ -25,7 +37,13 @@
         </a-torus>
 
         <!-- Plane (Table Surface) -->
-        <a-plane position="0 0 -3" rotation="-90 0 0" width="5" height="5" color="#C0C0C0"></a-plane>
+        <a-plane 
+            position="0 0 -3" 
+            rotation="-90 0 0" 
+            width="5" 
+            height="5" 
+            color="#C0C0C0">
+        </a-plane>
 
         <!-- Lighting -->
         <a-light type="ambient" color="#ffffff" intensity="0.7"></a-light>
