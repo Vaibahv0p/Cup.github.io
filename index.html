@@ -1,31 +1,134 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-    <title>moon</title> 
-    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"> </script> 
-  </head> 
-  <body> 
-    <a-scene> 
-      <-box
-       position="1 1 1"     src="https://images.app.goo.gl/ZDBtjkiNrtFWEHKA8"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-        </a-box>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple 3D House</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-plane 
+                 position="0 0 0" 
+                 rotation="-90 0 0" 
+                 width="20" 
+                 height="20" 
+                 src="https://cloud-564rploic-hack-club-bot.vercel.app/01732628890151.jpeg">
+                   
+                 </a-plane>
+
+        <a-box 
+               position="0 1 0" 
+               width="5" 
+               height="4" 
+               depth="5" 
+               src=https://cloud-x72fgqbua-hack-club-bot.vercel.app/078e2b1936f3319f0014245ca9da9cd1d.jpg></a-box>
+        <a-cone 
+                position="0 4.5 0" 
+                height="3" 
+                radius-bottom="4" 
+                radius-top="0" 
+                color="#D32F2F">
+                  
+                </a-cone>
+
+        <a-cylinder 
+                    position="1.5 6.2 -1.5" 
+                    radius="0.3" 
+                    height="2" 
+                    color="grey">
+                      
+                    </a-cylinder>
+
+
+        <a-plane 
+                 position="0 0.5 2.51" 
+                 width="1" 
+                 height="2" 
+                 img src="https://cloud-gkzcliew6-hack-club-bot.vercel.app/104fb4b12ab87e1832d17f723c81d1d69.jpeg">
+                   
+                 </a-plane>
+
+    
+
+        <a-plane 
+                 position="1.6 2 2.51" 
+                 width="1.5" 
+                 height="1" 
+                 img src="https://cloud-gkzcliew6-hack-club-bot.vercel.app/090ecb01c24ce858260baa418348046d8.jpeg">
+                   
+                 </a-plane>
+
+     
+
+        <a-plane 
+                 position="-1.6 2 2.51" 
+                 width="1.5" 
+                 height="1" 
+                img src="https://cloud-gkzcliew6-hack-club-bot.vercel.app/090ecb01c24ce858260baa418348046d8.jpeg">
+                   
+                 </a-plane>
+
+     
+
+        <a-plane 
+                 position="0 0.01 3" 
+                 rotation="-90 0 0" 
+                 width="5" height="1" 
+                 color="brown">
+                   
+         </a-plane>
+
+        
+
+        <a-cylinder 
+                    position="-3 1.5 4" 
+                    radius="0.2" 
+                    height="2" 
+                    color="#6D4C41">
+                      
+                    </a-cylinder>
+
+        <a-sphere 
+                  position="-3 3 4" 
+                  radius="1" 
+                  color="green">
+                    
+                  </a-sphere>
+
       
-      <a-sphere src="https://cloud-904usp64w-hack-club-bot.vercel.app/026bf03757c4a485c5323151eaae3f9a4.jpg"   animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> 
-      </a-sphere> 
-      <a-sphere src="https://cloud-904usp64w-hack-club-bot.vercel.app/026bf03757c4a485c5323151eaae3f9a4.jpg"
-     position=" 3 7 9">                
-       </a-sphere>
-      <a-animation 
-                   attribute="rotation" 
-                   dur="10000" 
-                   to="0 360 0" 
-                   repeat="indefinite"> 
-      </a-animation> 
-      <a-sky 
-             src="https://cloud-r20vjs8nj-hack-club-bot.vercel.app/01d3b012b0dd4278f3abf7a82cb02a66a.jpg"> </a-sky> 
-    </a-scene> 
-    </body> 
+
+        <a-entity 
+                  camera position="0 1.6 10" 
+        ></a-entity>
+
+
+        <a-light 
+                 type="ambient" 
+                 intensity="0.5">
+                   
+                 </a-light>
+
+        <a-light 
+                 type="directional" 
+                 position="5 5 -5" 
+                 intensity="1" 
+                 color="white">
+                   
+                 </a-light>
+
+    </a-scene>
+
+</body>
+
 </html>
